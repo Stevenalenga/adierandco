@@ -1,101 +1,151 @@
-import Image from "next/image";
+import Link from 'next/link'
+import Image from 'next/image'
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function Home() {
+const values = [
+  {
+    title: "Innovation",
+    description: "We are dedicated to finding more efficient and dynamic ways to serve our clients."
+  },
+  {
+    title: "Excellence",
+    description: "Our passion and commitment to excellence is evident in our delivery of quality services."
+  },
+  {
+    title: "Client Relationship",
+    description: "We believe that our clients are the life wire of our practice. We do everything within our ability to keep them satisfied."
+  },
+  {
+    title: "Team Spirit",
+    description: "We believe in working together as a family to achieve the best results."
+  },
+  {
+    title: "Integrity",
+    description: "Our word is our bond and we hold ourselves to the highest industry standards."
+  }
+]
+
+const clients = [
+  { name: "Apollo Agriculture", logo: "/clients/apollo.png" },
+  { name: "Neural Labs", logo: "/clients/neural_labs.jpg" },
+  { name: "Nexus Systems Tech Limited", logo: "/clients/nexus.jpg" },
+  { name: "Weatherman Africa", logo: "/clients/weatherman.jpg" },
+]
+
+const practiceAreas = [
+  {
+    title: "CORPORATE & COMMERCIAL PRACTICE",
+    description: "From start-ups looking to disrupt the market to recognised global conglomerates, we provide specialised commercial legal services regardless of where your business sits on the maturity curve. We are therefore committed to tailoring our contractual so..."
+  },
+  {
+    title: "LITIGATON AND DISPUTE RESOLUTION",
+    description: "We continue to create a team of lawyers whose practical experience, technical strength and strategic insight is unmatched. We strive to deliver successful outcomes in some of the most complex and sensitive disputes and investigations in the market. O..."
+  },
+  {
+    title: "EMPLOYMENT & LABOUR RELATIONS",
+    description: "From start-ups, listed companies, individuals to charitable organisations, we advise our clients on their most difficult and sensitive employment issues. We understand that this is one area where one size does not fit all. We therefore offer a depth ..."
+  },
+  {
+    title: "BANKING, FINANCE & REAL ESTATE",
+    description: "Banking, Finance & Real Estate forms a key part of the global and local investment market. We have considerable experience advising individuals, corporate occupiers, investors, developers, governments and funders on the legal requirements and strateg..."
+  },
+  {
+    title: "IMMIGRATION ADVISORY",
+    description: "We pride ourselves in our ability to help businesses set up in the country through our continued assistance of our Clients with bespoke legal and practical advice on immigration issues relating to their employees. We not only offer a depth of technic..."
+  },
+  {
+    title: "INTELLECTUAL PROPERTIES AND TECHNOLOGY",
+    description: "Companies around the world turn to us for their most important intellectual property registration and advice. We undertake various intellectual property registrations as well as institute and defend intellectual property claims before tribunals and ..."
+  },
+  {
+    title: "DATA PROTECTION AND PRIVACY",
+    description: "Knowing data protection challenges can arise at any time, we guide our Clients through the regulatory and reputational challenges. We are trusted advisors of companies and individuals we represent whether in responding to breaches, dealing with regul..."
+  }
+]
+
+export default function WelcomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen">
+      <section className="container mx-auto px-4 py-12 md:py-24">
+        <div className="text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-[rgb(10,35,41)] mb-6">
+            Welcome To
+          </h1>
+          <h2 className="text-3xl md:text-5xl font-semibold text-[rgb(157,67,43)] mb-12">
+            Adier & Co.
+          </h2>
+          <p className="text-lg md:text-xl text-[rgb(10,35,41)] max-w-3xl mx-auto mb-12">
+            Adier & Co. Legal is a full service law firm headquartered in Nairobi, Kenya. 
+            We offer top level legal and business services to both local and international clients. 
+            Our expertise on legal issues cuts across borders.
+          </p>
+          <Button asChild className="bg-[rgb(157,67,43)] hover:bg-[rgb(10,35,41)] text-white">
+            <Link href="/contact">Contact Us</Link>
+          </Button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <section className="py-16 md:py-24 bg-[url('/law.jpg')] bg-cover bg-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Our Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <div key={index} className="bg-white/90 p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold text-[rgb(157,67,43)] mb-4">{value.title}</h3>
+                <p className="text-[rgb(10,35,41)]">{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-[rgb(10,35,41)]">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Our Trusted Clients</h2>
+          <div className="overflow-hidden">
+            <div className="flex animate-marquee">
+              {[...clients, ...clients].map((client, index) => (
+                <div key={index} className="flex-shrink-0 w-64 mx-8">
+                  <Image
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    width={200}
+                    height={100}
+                    className="w-full h-auto"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[rgb(10,35,41)] text-center mb-12">Our Practice Areas</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {practiceAreas.map((area, index) => (
+              <Card key={index} className="bg-white shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold text-[rgb(157,67,43)]">{area.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-[rgb(10,35,41)]">
+                    {area.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Button asChild className="bg-[rgb(157,67,43)] hover:bg-[rgb(10,35,41)] text-white">
+              <Link href="/practice-areas">View All Practice Areas</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
+
