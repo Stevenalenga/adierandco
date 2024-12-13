@@ -29,7 +29,7 @@ export function SiteFooter() {
             <h3 className="text-xl font-semibold mb-4">Latest Articles</h3>
             <div className="flex items-center mb-4">
               <Image
-                src="/placeholder.svg?height=50&width=50"
+                src="/adierandco.png"
                 alt="Article thumbnail"
                 width={50}
                 height={50}

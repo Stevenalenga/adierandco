@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 
 import { SiteHeader } from "@/components/ui/site-header"
 import { SiteFooter } from "@/components/ui/site-footer"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />
+          <Toaster />
         </div>
       </body>
     </html>
