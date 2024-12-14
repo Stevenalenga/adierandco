@@ -8,8 +8,8 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Adier & Co - Advocates, Notaries Public, Commissioners for Oaths and Patent Agents",
-  description: "Legal services and consultation by Adier & Co.",
+  title: "Adier & Co - Top Law Firm in Kenya | Advocates, Notaries, and Legal Experts",
+  description: "Adier & Co is a leading boutique law firm based in Nairobi, Kenya, specializing in litigation, corporate transactions, commercial law, and dispute resolution. Trusted by clients across Kenya, Tanzania, and East Africa for world-class legal services.",
 }
 
 export default function RootLayout({

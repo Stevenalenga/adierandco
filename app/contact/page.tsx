@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -73,7 +72,7 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-12">
         <div>
           <h2 className="text-2xl font-semibold text-[rgb(157,67,43)] mb-4">Get in Touch</h2>
-          <p className="mb-6">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+          <p className="mb-6">We are here to help and answer any question you might have. We look forward to hearing from you.</p>
           
           <div className="space-y-4">
             <div className="flex items-center">

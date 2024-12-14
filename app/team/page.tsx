@@ -5,25 +5,25 @@ const teamMembers = [
   {
     name: "STEPHEN ADIER",
     position: "Managing Partner",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/team/adier.jpeg",
     description: "Stephen Adier is the Managing Partner at Adier & Co. Legal. With years of experience in corporate law, he leads our team with vision and expertise."
   },
   {
     name: "LIZZAH AQUILIAH",
     position: "Senior Associate",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/team/lizza.jpeg",
     description: "Lizzah Aquiliah specializes in employment law and dispute resolution. Her analytical skills and attention to detail are invaluable to our clients."
   },
   {
     name: "GEOFFREY KOECH",
     position: "Associate",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/team/koech.jpeg",
     description: "Geoffrey Koech focuses on intellectual property and technology law. His innovative approach helps our clients navigate complex legal landscapes."
   },
   {
     name: "KIBET AYUB KIPROP",
     position: "Associate",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/team/kibet.jpeg",
     description: "Kibet Ayub Kiprop specializes in banking and finance law. His expertise in this area provides crucial support to our corporate clients."
   }
 ]

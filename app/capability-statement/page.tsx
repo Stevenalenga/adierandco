@@ -26,13 +26,28 @@ export default function CapabilityStatementPage() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[rgb(157,67,43)] mb-4">INTERNATIONAL STANDARDS WITH LOCAL EXPERTISE</h2>
         <p className="mb-4">
-          We combine international experience with local expertise to ensure that our level of advice and provision of legal service is unrivalled by our competition. We are building a reputation as the "go-to" firm for all litigious matters, corporate transactions and commercial matters. And are seen as trusted advisors for both our international and local clients.
+        
+We seamlessly blend international experience with local expertise, 
+delivering legal services and advice that set us apart from the competition.
+
+Recognized for our excellence,
+ we are establishing ourselves as the "go-to" firm for litigious matters, 
+ corporate transactions, and commercial issues. Our commitment to providing reliable,
+ insightful, and effective solutions has earned us the trust of both international and local clients, 
+ cementing our reputation as their trusted advisors.
         </p>
         <p className="mb-4">
-          In Kenya, Tanzania and throughout East Africa, we are dedicated to leveraging our relationships to provide a wide range of legal services tailored to support the way you operate.
+        Across Kenya, Tanzania, and the wider East African region, 
+        we are committed to leveraging our extensive networks and relationships to deliver a comprehensive range of legal services.
+         Our solutions are thoughtfully tailored to align with your operations, 
+         ensuring seamless support for your unique needs.
         </p>
         <p className="mb-4">
-          Having close relationships with internationally qualified lawyers complementing local qualifications is a model which allows us to deliver a much more responsive service than other law firms established in the region.
+        Our close partnerships with internationally qualified lawyers,
+         combined with strong local expertise, 
+         enable us to deliver a highly responsive and efficient service.
+          This unique model sets us apart from other law firms in the region, ensuring our clients receive seamless, 
+          world-class legal solutions tailored to their needs.
         </p>
       </section>
 
