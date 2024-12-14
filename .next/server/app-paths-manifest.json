@@ -1,0 +1,7 @@
+{
+  "/firm/page": "app/firm/page.js",
+  "/expertise/page": "app/expertise/page.js",
+  "/capability-statement/page": "app/capability-statement/page.js",
+  "/page": "app/page.js",
+  "/contact/page": "app/contact/page.js"
+}
