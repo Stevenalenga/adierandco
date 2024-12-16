@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  
+
   experimental: {
-    serverActions: false,
+    serverActions: {
+      allowedOrigins: ['localhost:3000'],
+    },
   },
 }
 

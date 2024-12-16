@@ -42,7 +42,7 @@ export function SiteHeader() {
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/adierandco.png"
             alt="Adier & Co Logo"
             width={192}
             height={57}
