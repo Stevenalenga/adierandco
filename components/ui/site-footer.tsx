@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-
+import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
 const SocialIcon = ({ href, icon, hoverColor }: { href: string; icon: React.ReactNode; hoverColor: string }) => (
   <Link href={href} className={`text-white hover:${hoverColor} transition-colors duration-200`}>
@@ -17,19 +17,25 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Image
-              src="/adierandco.png"
+              src="/logo.png"
               alt="Adier & Co Logo"
               width={192}
               height={57}
               className="h-auto w-48 mb-4"
             />
             <p className="mb-4">Adier & Co. Legal is a full service law firm headquartered in Nairobi, Kenya. We offer top level legal and business services to both local and international clients. Our expertise on legal issues cuts across borders.</p>
+            <div className="space-y-2">
+              <p className="flex items-center"><MapPin className="mr-2" size={16} /> 12th Floor, Westpark Towers, Mpesi Lane – Off Muthithi Road</p>
+              <p className="flex items-center"><Mail className="mr-2" size={16} /> P.O. Box 1570 – 00606, Nairobi, Kenya</p>
+              <p className="flex items-center"><Phone className="mr-2" size={16} /> +254705820063, +254719725219</p>
+              <p className="flex items-center"><Clock className="mr-2" size={16} /> Mon – Fri: 09:00 - 06:00</p>
+            </div>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Latest Articles</h3>
             <div className="flex items-center mb-4">
               <Image
-                src="/adierandco.png"
+                src="/placeholder.svg?height=50&width=50"
                 alt="Article thumbnail"
                 width={50}
                 height={50}
