@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-
 export default function AboutFirmPage() {
   return (
     <div className="container mx-auto px-4 py-12">
@@ -19,7 +18,7 @@ export default function AboutFirmPage() {
       <section className="mb-12 flex flex-col md:flex-row items-center">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <Image
-            src="/placeholder.svg?height=300&width=300"
+            src="/team/adier.jpeg"
             alt="Stephen Adier"
             width={300}
             height={300}
@@ -68,4 +67,3 @@ export default function AboutFirmPage() {
     </div>
   )
 }
-
