@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function CapabilityStatementPage() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-[rgb(10,35,41)] mb-8">ADIER & Co. CAPABILITY STATEMENT</h1>
+      <h1 className="text-4xl font-bold text-[rgb(10,35,41)] mb-8">ADIER &amp; Co. CAPABILITY STATEMENT</h1>
       <p className="text-xl mb-8 text-[rgb(157,67,43)]">Building Relationships and Delivering Results</p>
 
       <section className="mb-12">
@@ -24,9 +24,9 @@ export default function CapabilityStatementPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[rgb(157,67,43)] mb-4">International Standards and local expertise</h2>
+        <h2 className="text-2xl font-semibold text-[rgb(157,67,43)] mb-4">International Standards and Local Expertise</h2>
         <p className="mb-4">
-          ADIER & Co. merges international experience with local expertise, ensuring that our legal advice and services stand out in the competitive landscape. We are recognized as the "go-to" firm for litigation, corporate transactions, and commercial matters, trusted by both international and local clients.
+          ADIER and Co. merges international experience with local expertise, ensuring that our legal advice and services stand out in the competitive landscape. We are recognized as the &quot;go-to&quot; firm for litigation, corporate transactions, and commercial matters, trusted by both international and local clients.
         </p>
         <p className="mb-4">
           Operating in Kenya, Tanzania, and throughout East Africa, we leverage our relationships and regional knowledge to deliver legal solutions tailored to your specific operations.
