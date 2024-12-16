@@ -17,7 +17,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Image
-              src="/logo.png"
+              src="/adierandco.png"
               alt="Adier & Co Logo"
               width={192}
               height={57}

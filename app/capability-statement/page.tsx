@@ -31,7 +31,7 @@ We seamlessly blend international experience with local expertise,
 delivering legal services and advice that set us apart from the competition.
 
 Recognized for our excellence,
- we are establishing ourselves as the "go-to" firm for litigious matters, 
+ we are establishing ourselves as the &quot;go-to&quot; firm for litigious matters, 
  corporate transactions, and commercial issues. Our commitment to providing reliable,
  insightful, and effective solutions has earned us the trust of both international and local clients, 
  cementing our reputation as their trusted advisors.
